@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/cloud-solid.svg" type="image/svg+xml">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Weather App</h1>
+            <form id="weather-form">
+                <div class="input-group">
+                    <label for="city">Enter City:</label>
+                    <input type="text" id="city" list="city-list" placeholder="e.g., New York" required>
+                    <datalist id="city-list"></datalist>
+                </div>
+                <button type="submit">Get Weather</button>
+            </form>
+            <div id="weather-info" class="weather-info"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
